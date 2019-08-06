@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+//关联mobx
+import {Provider} from "mobx-react"
+//引入react-router-dom
+import { HashRouter as Router } from 'react-router-dom';
+//引入路由表
+import RouterView from './router/index'
+//仓库
+import store from "./store/index"
+//样式
+import "./index.css"
+import "../node_modules/swiper/dist/css/swiper.min.css"
+//iconfonts图标
+import './fonts/iconfont.css'
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<Provider {...store}>
+    <React.Fragment>
+        <Router>
+            <RouterView />
+        </Router>
+    </React.Fragment>
+</Provider>, document.getElementById('root'));

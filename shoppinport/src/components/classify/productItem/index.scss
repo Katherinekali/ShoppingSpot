@@ -1,0 +1,23 @@
+.pro_wrap{
+    box-sizing: border-box;
+    width:49.5%;
+    margin:.01rem;
+    padding:.2rem;
+    background: #fff;
+    img{
+        width:3.2rem;
+        height:3.2rem;
+    }
+    p{
+        width:100%;
+        overflow: hidden;
+    }
+    .product_name{
+        width:100%;
+        overflow: hidden;
+        text-align: center;
+        text-overflow: ellipsis;
+        white-space:nowrap;
+        color:#000000;
+    }
+}

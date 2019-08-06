@@ -1,68 +1,97 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About
+此项目是仿网易严选UI设计的H5App,项目基于React+mobx,运用阿里antd-design-mobile的UI组件
 
-## Available Scripts
+## 技术栈
+- React+React-router-dom(核心框架)
+- mobx(同redux,是一个数据管理库,可直接修改数据,比redux上手更快)
+- better-scroll(使移动端滑动体验更加流畅)
+- antd-design-mobile(UI组件)
+- axios (请求)
 
-In the project directory, you can run:
+## 项目运行
 
-### `npm start`
+```
+前端
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+git clone git@github.com:107yu/easyMarketApp.git
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+cd easyMarketApp
 
-### `npm test`
+npm install
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm start
 
-### `npm run build`
+后端
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+git clone git@github.com:jasonandjay/easyMarketServer.git
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+cd easyMarketServer
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm install
 
-### `npm run eject`
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+## 功能列表
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [x] 登录验证功能
+- [x] 首页
+    - [x] 品牌制造页
+    - [x] 品牌制造详情页面
+    - [x] 新品首发页面
+    - [x] 人气推荐页面
+    - [x] 各分类列表
+    - [x] tab切换
+    - [x] 轮播
+- [x] 专题
+     - [x] 列表渲染
+     - [x] 添加评论
+     - [x] 添加留言
+- [x] 分类
+    - [x] tab切换获取相应的数据接口进行渲染
+    - [x] 点击详情进入
+    - [x] scroll滑动
+    - [x] 点击获取相应的数据
+    - [x] 搜索功能
+        - [x] 历史记录
+        - [x] 热门搜索
+        - [x] 搜索后列表展示
+        - [x] 模糊搜索
+        - [x] 商品列表部分包含综合、价格高低进行排序
+- [x] 购物车
+    - [x] 点击加加减减
+    - [x] 编辑进行修改
+    - [x] 勾选商品计算总价
+    - [x] 编辑进行删除
+- [x] 我的
+    - [x] 我的收藏
+        - [x] 渲染相应的收藏商品
+        - [x] touch滑动进行删除
+    - [x] 地址管理
+        - [x] 新建地址
+        - [x] 左滑删除
+        - [x] 设置默认地址
+        - [x] 表单进行详细地址的填写
+    - [x] 退出登录
+        - [x] 删除本地存储的token
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 页面截图
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![git-image](git-image/1.png)
+![git-image](git-image/2.png)
+![git-image](git-image/3.png)
+![git-image](git-image/4.png)
+![git-image](git-image/5.png)
+![git-image](git-image/6.png)
+![git-image](git-image/7.png)
+![git-image](git-image/8.png)
+![git-image](git-image/9.png)
+![git-image](git-image/10.png)
+![git-image](git-image/11.png)
+![git-image](git-image/12.png)
+![git-image](git-image/13.png)
+![git-image](git-image/14.png)
+![git-image](git-image/15.png)
+![git-image](git-image/16.png)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
