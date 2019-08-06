@@ -74,9 +74,7 @@ npm start
         - [x] 表单进行详细地址的填写
     - [x] 退出登录
         - [x] 删除本地存储的token
-
 ## 页面截图
-
 ![git-image](git-image/1.png)
 ![git-image](git-image/2.png)
 ![git-image](git-image/3.png)
@@ -89,9 +87,7 @@ npm start
 ![git-image](git-image/10.png)
 ![git-image](git-image/11.png)
 ![git-image](git-image/12.png)
-![git-image](git-image/13.png)
-![git-image](git-image/14.png)
-![git-image](git-image/15.png)
+
 
 
 
