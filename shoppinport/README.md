@@ -92,6 +92,6 @@ npm start
 ![git-image](git-image/13.png)
 ![git-image](git-image/14.png)
 ![git-image](git-image/15.png)
-![git-image](git-image/16.png)
+
 
 
